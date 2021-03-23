@@ -1,6 +1,5 @@
 // import './Country.css'
 import { useParams } from "react-router-dom";
-import Heading from "../Heading/Heading";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";

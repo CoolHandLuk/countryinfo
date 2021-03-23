@@ -1,6 +1,5 @@
 // import "./Heading.css";
 import {Link} from 'react-router-dom';
-import {useContext, useState} from 'react';
 
 const Heading = ({isLightMode, setIsLightMode}) => {
 

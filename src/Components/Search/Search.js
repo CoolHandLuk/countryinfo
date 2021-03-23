@@ -1,5 +1,4 @@
-// import "./Search.css";
-import {useState} from 'react';
+
 
 const Search = ({filteredData, setFilteredData, numberOfCountries}) => {
 
