@@ -8,7 +8,13 @@
   box-sizing: border-box;
 }
 
-body {
+.app {
   font-family: sans-serif;
   background-color: #202c37;
+  min-height: 100vh;
 }
+
+
+  .app.lightmode {
+    background-color: #f0eaea;
+  }

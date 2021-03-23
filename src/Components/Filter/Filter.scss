@@ -2,11 +2,19 @@
   width: 200px;
   height: 40px;
   background-color: $grey-bright;
-  color: white;
+  color: $text-color;
   border: none;
   padding-left: 20px;
   font-size: $font-size-filter;
 }
+
+.lightmode {
+  .filter__wrapper {
+    background-color: $light-color-main;
+    color: $light-color-font;
+  }
+}
+
 
 @media (max-width: 480px) {
   .filter__wrapper {

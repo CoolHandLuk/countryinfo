@@ -1,13 +1,18 @@
 // import './Filter.css'
 
-const Filter = () => {
+const Filter = ({regions, setRegions}) => {
+
+  const statusHandler = (e)=> {
+    setRegions(e.target.value)
+  }
+
   return (
     <>
     
-    <select className="filter__wrapper">
-        <option> Filter by Region</option>
+    <select onChange={statusHandler} className="filter__wrapper">
+        <option> All</option>
         <option> Africa</option>
-        <option> America</option>
+        <option> Americas</option>
         <option> Europe</option>
         <option> Oceania</option>
       </select>

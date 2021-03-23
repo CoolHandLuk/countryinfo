@@ -1,10 +1,17 @@
-@import "../Global/Variables.scss";
+// @import "../Global/Variables.scss";
 
 .country__wrapper {
-  padding: 70px;
+  padding: 40px;
   color: $text-color;
-  min-height: calc(100vh - $heading-height);
+  height: calc(100vh - 100px);
   font-size: $font-size-country-details;
+  
+}
+
+.lightmode {
+  .country__wrapper {
+    color:$light-color-font;
+  }
 }
 
 .country__button {
@@ -19,8 +26,22 @@
   transition: 1s;
 }
 
+.lightmode {
+  .country__button {
+    
+    color: $light-color-font;
+    background-color: $light-color-main;
+  }
+}
+
 .country__button:hover {
   background-color: $button-hover;
+}
+
+.lightmode {
+  .country__button:hover {
+    background-color: $light-color-background;
+  }
 }
 
 .country__flag img {
@@ -56,6 +77,7 @@
 .country__bottom,
 .country__borderlist {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .country__border-elements {
@@ -65,6 +87,13 @@
   padding: 5px 10px;
   background-color: $grey-bright;
   box-shadow: $button-shadow;
+}
+
+.lightmode {
+  .country__border-elements {
+    background-color: $light-color-main;
+   
+  }
 }
 
 /* Media Queries */

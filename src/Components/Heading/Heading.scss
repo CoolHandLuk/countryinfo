@@ -8,18 +8,24 @@
   padding: 0 30px;
 }
 
-.heading__wrapper.grey {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: $heading-height;
-  background-color: green;
-  color: $text-color;
-  padding: 0 30px;
+.lightmode {
+  .heading__wrapper {
+    background-color: $light-color-main;
+    color: $light-color-font;
+  }
 }
+
+.lightmode {
+  .heading__textleft {
+    color:$light-color-font;
+    
+  }
+}
+
 
 .heading__textleft {
   color: $text-color;
+ 
 }
 
 .heading__textright {

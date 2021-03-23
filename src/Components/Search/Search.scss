@@ -3,22 +3,43 @@
 }
 
 .form__icon {
-  color: white;
+  color: $text-color;
   padding: 12px;
-  background-color: hsl(209, 23%, 22%);
+  background-color: $grey-bright;
+}
+
+.lightmode {
+  .form__icon {
+    color:$light-color-font;
+    background-color: $light-color-main;
+  }
 }
 
 .form__input {
   width: 300px;
-  background-color: hsl(209, 23%, 22%);
+  background-color: $grey-bright;
   border: none;
   height: 40px;
   outline: none;
-  color: white;
+  color: $text-color;
 }
+
+.lightmode {
+  .form__input {
+    background-color: $light-color-main;
+    color: $light-color-font;
+  }
+}
+
 ::placeholder {
-  color: white;
+  color: $text-color;
   padding-left: 30px;
+}
+
+.lightmode {
+  ::placeholder {
+    color: $light-color-font;
+  }
 }
 
 @media (max-width: 768px) {

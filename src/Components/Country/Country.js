@@ -19,7 +19,6 @@ const Country = () => {
   });
   return (
     <>
-      <Heading />
       <div className="country__wrapper" >
         {country &&
           country.map((el) => {
@@ -67,15 +66,15 @@ const Country = () => {
 
                               <div className="country__bottom">
                                     <h3>Border Countries:</h3>
-                                    <div className="country__borderlist">
-                                        {borders.map((border)=>{
+                                    <div >
+                                      <ul className="country__borderlist">
+                                        {borders.length > 0 ? borders.map((border)=>{
                                           return(
-                                            <u key={border}>
-                                            <li className="country__border-elements">{border}</li>
-                                            </u> 
-                                          
+                                            <li className="country__border-elements" key={border}>{border} </li>
                                           )
-                                        })}
+                                        }) : <li className="country__border-elements">None</li>
+                                      } 
+                                        </ul> 
                                   </div>   
                             </div>
                    

@@ -3,12 +3,29 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.lightmode {
+  .countries__entry {
+      color: $light-color-font;
+      background-color: $light-color-main;
+  }
+}
+
 .countries__entry {
   margin: 30px;
   background-color: $grey-dark;
   text-align: left;
   border-radius: 4px;
   color: $text-color;
+ 
+}
+
+.countries__entry.pink {
+  margin: 30px;
+  background-color: $grey-dark;
+  text-align: left;
+  border-radius: 4px;
+  // color: $text-color;
+  color: pink;
 }
 
 .countries__entry.grey {
